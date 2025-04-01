@@ -6,15 +6,16 @@ local ServerStorage = game:GetService("ServerStorage")
 local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
 local DebrisService = game:GetService("Debris")
+local ReplicatedStorage = game:GetService("ReplicatedStorage)
 
-local IdleAnimation = game:GetService("ReplicatedStorage").Assets.Animations.Mobs.Main.Idle
-local SpawnEffect = game:GetService("ReplicatedStorage").Assets.VFX.Enemies.SpawnEffect
-local DeathEffect = game:GetService("ReplicatedStorage").Assets.VFX.Enemies.Death
-local HoverRemote = game:GetService("ReplicatedStorage").Remotes.Hover
-local EffectRemote = game:GetService("ReplicatedStorage").Remotes.ClientEffect
-local AnimationRemote = game:GetService("ReplicatedStorage").Remotes.ClientAnimation
-local DamagedRemote = game:GetService("ReplicatedStorage").Remotes.ClientDamage
-local DropsRemote = game:GetService("ReplicatedStorage").Remotes.ClientDrops
+local IdleAnimation = ReplicatedStorage.Assets.Animations.Mobs.Main.Idle
+local SpawnEffect = ReplicatedStorage.Assets.VFX.Enemies.SpawnEffect
+local DeathEffect = ReplicatedStorage.Assets.VFX.Enemies.Death
+local HoverRemote = ReplicatedStorage.Remotes.Hover
+local EffectRemote = ReplicatedStorage.Remotes.ClientEffect
+local AnimationRemote = ReplicatedStorage.Remotes.ClientAnimation
+local DamagedRemote = ReplicatedStorage.Remotes.ClientDamage
+local DropsRemote = ReplicatedStorage.Remotes.ClientDrops
 
 local RESPAWN_TIMES = {
 	Normal = 3, -- normal mob,
