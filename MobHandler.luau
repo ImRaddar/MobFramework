@@ -6,7 +6,7 @@ local ServerStorage = game:GetService("ServerStorage")
 local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
 local DebrisService = game:GetService("Debris")
-local ReplicatedStorage = game:GetService("ReplicatedStorage)
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local IdleAnimation = ReplicatedStorage.Assets.Animations.Mobs.Main.Idle
 local SpawnEffect = ReplicatedStorage.Assets.VFX.Enemies.SpawnEffect
